@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  .list{
+      margin-top: 45px;
+  }
+  .title{
+      color:powderblue; 
+     }
+  .wrapper{
+   text-align: center;
+
+  }
+  dt{
+      background: powderblue;
+      height: 4vh;
+      position: sticky;
+      top:45px;
+      font-weight: bold; 
+  }
+
+  dt span{
+    color: black;
+    font-size: 1.5rem;
+  }
+  dd{
+    letter-spacing: .2em;
+    line-height: 3rem;
+    font-weight:bolder;
+    font-family: cursive;
+  }

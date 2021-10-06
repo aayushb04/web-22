@@ -1,0 +1,76 @@
+@keyframes change-sky-color {
+    0% {
+      background-color: #2c3e50;
+    }
+    10% {
+      background-color: #1565C0;
+    }
+    30% {
+      background-color: #03A9F4;
+    }
+    70% {
+      background-color: #03A9F4;
+    }
+    90% {
+      background-color: #1565C0;
+    }
+    100% {
+      background-color: #2c3e50;
+    }
+  }
+  
+  @keyframes sunrise-sunset {
+    0% {
+      transform: translate(0, 0);
+      background-color: #FF5722;
+    }
+    25% {
+      transform: translate(20vw, -120px);
+      background-color: #FF9800;
+    }
+    50% {
+      transform: translate(40vw, -180px);
+      background-color: #FFC107;
+    }
+    75% {
+      transform: tanslate(60vw, -120px);
+      background-color: #FF9800;
+    }
+    100% {
+      transform: translate(80vw, 0);
+      background-color: #FF5722;
+    }
+  }
+  body {
+    animation-name: change-sky-color;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: 0;
+    background-color: #2c3e50;
+  }
+  #sun {
+    animation-name: sunrise-sunset;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 60px;
+    position: relative;
+    top: 60px;
+    background-color: orange;
+  }
+  #sun:hover {
+    animation-play-state: running;
+  }
+  #grass {
+    background: lightgreen;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+  }

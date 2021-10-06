@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  .list{
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
+  }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center bg-dark text-white" style="margin-bottom:0">
+  <h1>Hi, I Am Aayush</h1>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Me</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+<div class="container bg-dark text-white mw-100  p-0">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <img  class="fakeimg" src="./images/photo_2021-08-10_22-43-18.jpg" alt="">
+      <p>I am Aayush Babbar,B.E CSE student.</p>
+      <h3>Profiles</h3>
+      <p>You can connect with me at:</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">LinkedIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Twitter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Github</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h2>Qualifications</h2>
+      <ul>
+          <li>Passed X(CBSE) in 2017 with 9.2CGPA</li>
+          <li>Passed XII from Mukat Public School(CBSE) with 86%(Non-Med)</li>
+      </ul>
+      <br>
+      <div style="height:150px;">
+      <h2>Skills</h2>
+      <ol style="list-style-type: circle;" class="list">
+    <li>Java(Intermediate)</li>
+    <li>HTML</li>
+    <li>C++(beginner)</li>
+    <li>JavaScript</li>
+    <li>React</li>
+    <li>CSS</li>
+    <li>SpringBoot(Beginner)</li>
+    </ol>
+</div>
+      <br>
+      <h2>Projects</h2>
+      <ol>
+          <li>
+              Recipe Search App Using React,React-redux,API. 
+              <a href="https://github.com/aayushb04/reacipe_app_react">Github Repo</a>
+          </li>
+          <li>
+              Basic Calculator using React
+            <a href="https://aayushbabbar04.github.io/react-calculator/">Click here</a>
+          </li>
+          <li>
+              Jewellery Ecommerce Website(Frontend)
+              <a href="https://aayushbabbar04.github.io/jewellery/">Click here</a>
+              <a href="https://github.com/aayushbabbar04/aayushbabbar04.github.io/tree/main/jewellery">Github Repo</a>
+          </li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

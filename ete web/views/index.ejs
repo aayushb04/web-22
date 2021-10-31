@@ -1,0 +1,22 @@
+<%- include("./partials/header") %>
+<%- include("./partials/navbar") %>
+
+<div class="container mt-5 py-5">
+    <h3>All Quotes😇 </h3>
+
+    <% blogs.reverse() %> 
+
+    <% blogs.forEach(blog => { %>
+    <div class="card mt-3" style="background-color: darkcyan; color:white;">
+        <div class="card-body">
+            <h5 class="card-text"><%= blog.content.slice(0, 99) %></h5>
+            <p class="card-title"><em>~<%= blog.title %></em> </p>
+            <a href=" /blog/<%= blog._id %>" class="btn btn-primary">View</a>
+        </div>
+    </div>
+    <%}) %>
+
+
+</div>
+
+<%- include("./partials/footer") %>
